@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Harvest Box</title>
+    <link rel="shortcut icon" type="image/png" href="./images/Favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <header class="header container">
+        <nav class="nav-layout">
+            
+            <div class="logo-box">
+                <svg class="logo" width="16" height="16">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+                <a href="./index.html" class="logo-text">fresh harvest box
+                </a>
+            </div>
+            <ul class="list site-nav">
+                <li><a href="" class="link" id="how-it-works">How It Works</a></li>
+                <li><a href="" class="link" id="fruits">Fruits</a></li>
+                <li><a href="" class="link" id="contacts">Contacts</a></li>
+            </ul>
+            <svg class="icon-basket" width="18.67" height="23.33">
+                <use href="./images/icons.svg#icon-basket"></use>
+            </svg>          
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- <button id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button> -->
+
+            <!-- <svg class="icon-basket" width="18.67" height="23.33">
+                <use href="./images/icons.svg#icon-basket-white"></use>
+            </svg> -->
+            <!-- <button class="burger">
+                            <div class="line line-s"></div>
+                            <div class="line"></div>
+                            <div class="line line-m"></div>
+                        </button> -->
+
+        </nav>
+        <div class="backdrop" data-modal>
+        
+            <ul class="list modal-site-nav">
+                <li><a href="" class="link" id="how-it-works">How It Works</a></li>
+                <li><a href="" class="link" id="fruits">Fruits</a></li>
+                <li><a href="" class="link" id="contacts">Contacts</a></li>
+            </ul>
+            <div class="modal-icon" >
+                <svg class="modal-icon-basket" width="18.67" height="23.33">
+                    <use href="../images/icons.svg#icon-basket-white"></use>
+                </svg>
+            </div>
+
+            
+        
+        </div>
+      
+<!-- <button class="hamburger"> -->
+    </header>
+    <main class="main">
+        <div class="main-box">next section</div>
+    </main>
+    <footer>
+        <div></div>
+    </footer>
+
+    
+        
+
+
+
+    <!-- Hamburger menu -->
+
+    <!-- <button class="burger">
+        <div class="line line-s"></div>
+        <div class="line"></div>
+        <div class="line line-m"></div>
+    </button> -->
+
+
+
+    <!-- <div class="js-menu-container">
+        <div class="mobile-menu-close">
+            <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="" width="12" height="12">
+                    <use href="./images/icons.svg#icon-hamburger-menu">
+                    </use>
+                    <use href="./images/icons.svg#icon-close-btn"></use>
+                </svg>
+            </button>
+    </div>
+    <nav class="mobile-nav-layout">
+            <div class="mobile-logo-box">
+                <svg class="logo" width="16" height="16">
+                    <use href="./images/Icons-svg.svg#icon-logo"></use>
+                </svg>
+                <a href="./index.html" class="logo-text">fresh harvest box
+                </a>
+            </div>
+            <ul class="list mobile-site-nav">
+                <li><a href="" class="link" id="">How It Works</a></li>
+                <li><a href="" class="link" id="">Fruits</a></li>
+                <li><a href="" class="link" id="">Contacts</a></li>
+            </ul>
+            <svg class="icon-basket" width="18.67" height="23.33">
+                <use href="./images/Icons-svg.svg#icon-basket-white"></use>
+            </svg>
+    </nav> -->
+
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script> -->
+    <script>
+
+        let isOpen = false
+
+            const hamburger = document.getElementById('hamburger')
+
+            function renderHamburger() {
+                hamburger.className = isOpen ? 'open' : 'closed'
+            }
+
+            function toggleHamburger() {
+                isOpen = !isOpen
+                renderHamburger()
+            }
+
+            hamburger.addEventListener('click', toggleHamburger)
+
+
+
+
+    </script>
+</body>
+</html>
