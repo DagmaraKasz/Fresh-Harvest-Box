@@ -42,7 +42,7 @@ html {
     align-items: center;
     width: 100%;
     padding: 16px 0;
-    position: relative;
+    
     margin-left: 20px;
 
 }
@@ -53,22 +53,12 @@ html {
 
 a {
     text-decoration: none;
-    position: relative;
+    /* position: relative; */
 }
 .site-nav {
     list-style-type: none;
-    display: flex;
     justify-content: space-around;
-    visibility: hidden;
-}
-
-.site-nav .link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    color: var(--color-red);
-    padding: 0 20px;
+    display: none;
 }
 
 .logo-box {
@@ -81,17 +71,18 @@ a {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    /* text-align: center;
-    align-items: center; */
     color: var(--color-red);
     margin-left: 8px;
 }
 
+.icon-basket {
+    display: none;
+}
 
 /* Hamburger menu z divami */
 #hamburger {
-    position: absolute;
-    top: 30%;
+    display: block;
+    top: 18px;
     right: 0;
     width: 20px;
     height: 5px;
@@ -101,7 +92,7 @@ a {
 }
 
 #hamburger div {
-    position: relative;
+    /* position: relative; */
     height: 2px;
     background-color: var(--color-red);
     margin-bottom: 5px;
@@ -120,14 +111,14 @@ a {
 #hamburger.open div:first-child {
     top: 9px;
     transform: rotateZ(45deg);
-    left: -1px;
+    left: -90px;
     width: 20px;
 }
 
 #hamburger.open div:last-child {
-    top: 2px;
+    top: 20px;
     transform: rotateZ(-45deg);
-    left: -2px;
+    left: -10px;
     width: 20px;
 }
 
@@ -228,13 +219,18 @@ a {
 
 .main-box {
     background-color: #000000;
-    color: #AE1332;
+    color: #44ae13;
 }
 
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
-    
-    .backdrop {
+    .icon-basket {
+        display: none;
+    }
+
+
+
+    /* .backdrop {
         position: absolute;
         right: 0;
         top: 50px;
@@ -251,18 +247,16 @@ a {
         background-color: var(--color-red);
         line-height: 3em;
         margin-top: 60px;
-    }
+    } */
 
-    .modal-site-nav .link {
+    /* .modal-site-nav .link {
         color: var(--color-white);
     }
     .modal-icon {
         justify-content: center;
         margin-top: 10px;
-    }
-    .icon-basket {
-        visibility: hidden;
-    }
+    } */
+    
    
 
     /* .burger {
@@ -329,51 +323,65 @@ a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    .site-nav {
-        visibility: visible;
-        justify-content: flex-start;
-        margin-left: 32px;
-        
+    .header {
+        max-width: 768px;
     }
-    .logo-box {
-        justify-content: center;
+    #hamburger {
+        display: none;
+    }
+
+    .nav-layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .site-nav .link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: var(--color-red);
+        padding: 0 16px;
+    }
+    .site-nav {
+        display: flex;
     }
 
     .icon-basket {
-        visibility: visible;
+        display: flex;
+        justify-content: flex-end;
         margin-right: 42px;
     }
-
-    #hamburger {
-        visibility: hidden;
-
-    }
+    
 }
 
 
 @media only screen and (min-width: 1280px) {
+
+    #hamburger {
+        display: none;
+    }
     .nav-layout {
         justify-content: space-between;
+        margin-left: 0;
     }
     .site-nav {
-        visibility: visible;
+        display: flex;
         justify-content: flex-start;
         margin-left: 32px;
     }
-    
+    .site-nav .link {
+        padding: 0 20px;
+    }
+
     .logo-box {
         justify-content: center;
     }
 
     .icon-basket {
-        visibility: visible;
+        display: flex;
         margin-right: 42px;
     }
-    
-    #hamburger {
-        visibility: hidden;
-    }
-
 }
 
 
